@@ -1,2 +1,2 @@
 # COE528
-Labs for COE528
+Labs, and final project for COE528
