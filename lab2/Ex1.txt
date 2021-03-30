@@ -1,0 +1,38 @@
+Anand Alexander Samaroo | SID: xxx xxx 021 
+
+COE528 Lab 2
+
+Ex1: Specification for substituteMax procedure
+
+The code for the substituteMax method and specifications are written below:
+
+
+
+//Requires: Arrays a and b are not null
+
+//Modifies: a
+
+//Effects:  searches a for maximum value, and sets that element as the index, scans b for maximum
+//value and sets that to the new index of a
+
+public static void substituteMax(int[] a, int[] b) { 
+ int maxOfA = a[0];
+ int index = 0;
+
+for (int i = 0; i < a.length; i++) {
+   if(a[i] > maxOfA) {
+     maxOfA = a[i];
+     index = i;
+    }
+ }
+
+  int maxOfB = b[0];
+  for (int i = 0; i < b.length; i++) {
+     if(b[i] > maxOfB) {
+        maxOfB = b[i];
+     }
+   }
+
+   a[index] = maxOfB;
+
+}
